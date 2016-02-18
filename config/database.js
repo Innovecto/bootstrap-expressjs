@@ -1,4 +1,4 @@
-var env = require('../helpers/env')();
+var env = require('../.env.json');
 
 module.exports.mysql = {
     driver     : env.db.driver,

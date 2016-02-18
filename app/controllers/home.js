@@ -1,18 +1,13 @@
+/* jslint node: true */
 var express = require('express');
 var home = express.Router();
 var root = require('path').resolve();
-var caminte = require(root + '/helpers/caminte');
+var caminte = require(root + '/helpers/models');
+var template = require(root + '/config/template');
 
-var User = caminte.model('User');
-var Post = caminte.model('Post');
+var Post = caminte.load('Post');
 
 exports.index = function(req, res) {
     "use strict";
-    Post.belongsTo(User, {
-        as: 'user',
-        foreignKey: 'user_id'
-    });
-    return res.render('index', {
-        title: 'Etalastic'
-    });
+    return res.render('index', template);
 };

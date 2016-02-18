@@ -2,8 +2,7 @@ var express    = require('express');
 var router     = express.Router();
 var controller = require('../helpers/controller');
 var group      = require('../helpers/group')(router);
-
-var middleware = require('../config/middleware');
+var middleware = require('../helpers/middleware');
 
 // This Grouping for routing
 // you must include prefix to use this group routing

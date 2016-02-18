@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.min.css">
+</head>
+<body>
+    {{$content}}<!-- Content starts here -->{{/content}}
+
+    <script src="/js/app.min.js"></script>
+</body>
+</html>

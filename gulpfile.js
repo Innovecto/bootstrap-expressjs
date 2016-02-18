@@ -28,5 +28,9 @@ elixir(function(mix) {
     mix.imagemin({
         interlaced: true
     });
+    mix.browserify([
+        'main.js'
+    ], 
+    'public/js/app.min.js');
 });
 
