@@ -21,8 +21,6 @@ var routes = require('./app/routes');
 // Model Initialitation
 models.init(app);
 
-// require('./config/express')(app, express);
-
 /**
  * Express Init
  */

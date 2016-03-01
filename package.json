@@ -30,6 +30,7 @@
     "expressgroup": "^0.1.4",
     "file-stream-rotator": "0.0.6",
     "hjs": "0.0.6",
+    "jsonwebtoken": "^5.7.0",
     "mongodb": "^2.1.4",
     "mongoose": "^4.4.3",
     "morgan": "~1.6.1",
